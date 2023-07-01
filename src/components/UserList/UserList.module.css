@@ -3,7 +3,13 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+body {
+  font-family: "Montserrat";
+}
 .userCard {
   background-color: #5736a3;
   display: flex;
