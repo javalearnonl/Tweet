@@ -1,0 +1,89 @@
+.userList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.userCard {
+  background-color: #5736a3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 10px;
+  width: 380px;
+
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 10px;
+  position: relative;
+  background-image: url("../../img/picture.png");
+  background-repeat: no-repeat;
+  background-position: top 20px center;
+  z-index: 1;
+}
+
+.userCard::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #ebd8ff;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.line {
+  background: #ebd8ff;
+  box-shadow: 0 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+    inset 0 -1.71846px 3.43693px #ae7be3, inset 0 3.43693px 2.5777px #fbf8ff;
+  content: "";
+  display: block;
+  height: 8px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 380px;
+}
+
+.userCard img {
+  z-index: 999;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 50%;
+  border: 10px solid #fff; /* Ширина и стиль обводки */
+  border-color: #ebd8ff; /* Цвет обводки */
+}
+
+.userCard h2 {
+  margin-bottom: 5px;
+  color: #ebd8ff;
+  text-transform: uppercase;
+}
+
+.userCard h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+
+.userCard button {
+  padding: 14px 56px;
+  border-radius: 10px;
+  background-color: #ebd8ff;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.userCard button.followed {
+  padding: 14px 56px;
+  border-radius: 10px;
+  background-color: #5cd3a8;
+}
